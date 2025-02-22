@@ -1,0 +1,16 @@
+{
+  "name": "Next.js + Sanity",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:18",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "sanity-io.vscode-sanity",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install -g vercel@latest sanity@latest"
+}
